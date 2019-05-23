@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Amazon Automation Script ]">
+  <parameter name="useCloudEnv" value="false"/>
+  <parameter name="browser" value="Chrome"/>
+  <parameter name="cloudEnvName" value="Saucelabs"/>
+  <parameter name="platform" value="mac"/>
+  <parameter name="url" value="https://www.amazon.com/"/>
+  <test thread-count="5" verbose="0" name="Amazon Test(failed)">
+    <classes>
+      <class name="RegressionSuite.TestHomepage">
+        <methods>
+          <include name="setupDriver"/>
+          <include name="generateReport"/>
+          <include name="quitDriver"/>
+          <include name="init"/>
+          <include name="accountValidPhoneInput"/>
+          <include name="extentSetup"/>
+          <include name="afterEachTestMethod"/>
+          <include name="startExtent"/>
+        </methods>
+      </class> <!-- RegressionSuite.TestHomepage -->
+    </classes>
+  </test> <!-- Amazon Test(failed) -->
+</suite> <!-- Failed suite [Amazon Automation Script ] -->
